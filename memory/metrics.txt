@@ -1,0 +1,9 @@
+checkout-service:
+- error_rate increased from 0.4% to 12.7% after 14:05
+- p95_latency increased from 600ms to 4200ms
+- cpu stable at 47%
+- memory stable at 61%
+
+payment-provider:
+- upstream_5xx increased after 14:05
+- timeout_count increased sharply

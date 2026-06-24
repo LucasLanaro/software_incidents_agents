@@ -1,0 +1,8 @@
+[2026-06-22 14:03:12] INFO checkout-service deploy version=2.3.1 completed
+[2026-06-22 14:05:44] WARN checkout-service latency p95=4200ms
+[2026-06-22 14:06:01] ERROR checkout-service PaymentGatewayTimeout after 30000ms
+[2026-06-22 14:06:08] ERROR checkout-service POST /checkout returned 500
+[2026-06-22 14:06:19] WARN checkout-service retry limit exceeded for payment authorization
+[2026-06-22 14:07:02] ERROR payment-client upstream status=503 provider=PayFast
+[2026-06-22 14:08:30] INFO inventory-service status=healthy
+[2026-06-22 14:08:41] INFO auth-service status=healthy

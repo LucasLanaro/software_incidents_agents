@@ -1,0 +1,16 @@
+[
+  {
+    "id": "INC-102",
+    "summary": "Checkout failures after payment provider instability",
+    "symptoms": ["POST /checkout 500", "PaymentGatewayTimeout", "upstream 503"],
+    "root_cause": "External payment provider outage",
+    "resolution": "Activated fallback payment route and reduced retry timeout"
+  },
+  {
+    "id": "INC-087",
+    "summary": "Checkout latency after bad database migration",
+    "symptoms": ["high DB latency", "connection pool exhausted", "checkout timeout"],
+    "root_cause": "Database migration caused slow queries",
+    "resolution": "Rolled back migration"
+  }
+]
